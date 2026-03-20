@@ -8,13 +8,14 @@ type QTab = typeof Q_TABS[number];
 const MOD_SECTIONS = ['questions', 'polls'] as const;
 type Section = typeof MOD_SECTIONS[number];
 
-function LexroomLogo({ size = 24 }: { size?: number }) {
+function LexroomLogo({ size = 32 }: { size?: number }) {
   return (
-    <svg width={size * 4.2} height={size} viewBox="0 0 126 30" fill="none" aria-label="Lexroom">
-      <text x="0" y="23" fontFamily="'Instrument Serif', Georgia, serif" fontSize="26" fontWeight="400" fill="#0F4C9D" letterSpacing="-0.5">
+    <div className="flex items-center gap-2.5">
+      <img src="/logo-mark.svg" width={size} height={size * 0.75} alt="" className="rounded-sm" />
+      <span style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontSize: size * 0.75, color: '#E4E4E4', letterSpacing: '-0.3px' }}>
         Lexroom
-      </text>
-    </svg>
+      </span>
+    </div>
   );
 }
 

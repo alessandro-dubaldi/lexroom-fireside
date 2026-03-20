@@ -1,0 +1,10 @@
+<svg viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue background -->
+  <rect width="160" height="120" fill="#0F4C9D"/>
+  <!-- Large white rounded rect (center) -->
+  <rect x="33" y="29" width="89" height="65" rx="9" fill="white"/>
+  <!-- Top-right corner bleed -->
+  <rect x="128" y="-9" width="44" height="37" rx="9" fill="white"/>
+  <!-- Bottom-left corner bleed -->
+  <rect x="-9" y="95" width="44" height="35" rx="9" fill="white"/>
+</svg>

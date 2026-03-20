@@ -9,3 +9,19 @@ export interface Question {
   status: QuestionStatus;
   createdAt: string;
 }
+
+export type PollStatus = 'draft' | 'active' | 'closed';
+
+export interface PollOption {
+  id: string;
+  text: string;
+  voterIds: string[];
+}
+
+export interface Poll {
+  id: string;
+  question: string;
+  options: PollOption[];
+  status: PollStatus;
+  createdAt: string;
+}
